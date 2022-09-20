@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Cloud Firestore</string>
+    <string name="nome">Mim de seu nome</string>
+    <string name="endereco">Mim de seu endereço</string>
+    <string name="bairro">Mim de seu bairro</string>
+    <string name="cep">Mim de seu cep</string>
+    <string name="botas">Cadastrar</string>
+</resources>
