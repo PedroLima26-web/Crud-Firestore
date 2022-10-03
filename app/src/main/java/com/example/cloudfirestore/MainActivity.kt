@@ -1,6 +1,7 @@
 package com.example.cloudfirestore
 
 import android.content.ContentValues.TAG
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,9 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         // Access a Cloud Firestore instance from your Activity
         val db = Firebase.firestore
-        val tobao = findViewById<Button>(R.id.tobao)
+        val tobaoCadastro = findViewById<Button>(R.id.tobao)
+        val tobaoLista = findViewById<Button>(R.id.lista)
 
-        tobao.setOnClickListener {
+
+        tobaoCadastro.setOnClickListener {
         val nomi = findViewById<EditText>(R.id.edtNome).text.toString()
         val endereco = findViewById<EditText>(R.id.edtEndereco).text.toString()
         val bairro = findViewById<EditText>(R.id.edtBairro).text.toString()
@@ -45,5 +48,18 @@ class MainActivity : AppCompatActivity() {
                 }
         }
 
+        tobaoLista.setOnClickListener{
+            val nome = findViewById<EditText>(R.id.buscaNome).text.toString()
+            val intent = Intent(this, ListagemActivity::class.java)
+            intent.putExtra("nome", nome)
+            startActivity(intent)
+            finish()
+        }
+
     }
+    /*override fun onBackPressed() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+    }*/
 }

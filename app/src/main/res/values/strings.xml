@@ -4,5 +4,7 @@
     <string name="endereco">Mim de seu endereço</string>
     <string name="bairro">Mim de seu bairro</string>
     <string name="cep">Mim de seu cep</string>
-    <string name="botas">Cadastrar</string>
+    <string name="btnCadastra">Cadastrar</string>
+    <string name="btnLista">Listar</string>
+    <string name="lista">Insira um nome para buscar usuário</string>
 </resources>
