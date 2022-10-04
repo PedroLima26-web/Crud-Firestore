@@ -18,17 +18,17 @@ class ListagemActivity : AppCompatActivity() {
 
         // Access a Cloud Firestore instance from your Activity
         val db = Firebase.firestore
-        val tobaoCadastro = findViewById<Button>(R.id.tobao)
-        val tobaoLista = findViewById<Button>(R.id.lista)
-        var name = ""
+        val docRef = db.collection("users")
+        docRef.get().addOnSuccessListener { documents ->
+            for (document in documents) {
+                Log.d(TAG, "${document.id} => ${document.data}")
+            }
 
-        val extras = intent.extras
-        if (extras != null) {
-            name = extras.getString("nome").toString()
         }
-        Toast.makeText(baseContext, name, Toast.LENGTH_SHORT).show()
+
 
     }
+
     override fun onBackPressed() {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)

@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:tools="http://schemas.android.com/tools"    android:layout_height="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
     android:orientation="vertical"
     android:paddingTop="24dp">
 
     <EditText
-    android:id="@+id/edtNome"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginHorizontal="36dp"
-    android:layout_marginBottom="8dp"
-    android:hint="@string/nome"
-    android:minHeight="48dp" />
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="name"
+        android:hint="@string/nome"
+        android:inputType="textPersonName" />
 
     <EditText
-    android:id="@+id/edtEndereco"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginHorizontal="36dp"
-    android:layout_marginBottom="8dp"
-    android:hint="@string/endereco"
-    android:minHeight="48dp" />
+        android:id="@+id/edtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edtNome"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="phone"
+        android:hint="@string/telefone"
+        android:inputType="phone" />
 
     <EditText
-    android:id="@+id/edtBairro"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginHorizontal="36dp"
-    android:layout_marginBottom="8dp"
-    android:hint="@string/bairro"
-    android:minHeight="48dp" />
-
-    <EditText
-    android:id="@+id/edtCep"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:layout_marginHorizontal="36dp"
-    android:layout_marginBottom="8dp"
-    android:hint="@string/cep"
-    android:minHeight="48dp" />
+        android:id="@+id/edtSexo"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edtTelefone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="36dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="sex"
+        android:hint="@string/sex"
+        android:inputType="text" />
 
     <Button
-    android:id="@+id/tobao"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:text="@string/btnCadastra" />
+        android:id="@+id/tobao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSexo"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btnCadastra" />
 
-    <EditText
+    <!--EditText
         android:id="@+id/buscaNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,13 +61,17 @@
         android:layout_marginHorizontal="36dp"
         android:layout_marginBottom="8dp"
         android:hint="@string/lista"
-        android:minHeight="48dp" />
+        android:minHeight="48dp" /-->
 
     <Button
         android:id="@+id/lista"
+        style="@style/Widget.Material3.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edtSexo"
         android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@id/tobao"
         android:text="@string/btnLista" />
 
-</LinearLayout>
+</RelativeLayout>

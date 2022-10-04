@@ -1,9 +1,8 @@
 <resources>
     <string name="app_name">Cloud Firestore</string>
     <string name="nome">Mim de seu nome</string>
-    <string name="endereco">Mim de seu endereço</string>
-    <string name="bairro">Mim de seu bairro</string>
-    <string name="cep">Mim de seu cep</string>
+    <string name="telefone">Informe o telefone</string>
+    <string name="sex">Informe seu xo</string>
     <string name="btnCadastra">Cadastrar</string>
     <string name="btnLista">Listar</string>
     <string name="lista">Insira um nome para buscar usuário</string>
