@@ -34,18 +34,21 @@ class MainActivity : AppCompatActivity() {
             val txtTelefone = telefone.text.toString()
             val txtSexo = sexo.text.toString()
 
-            // Create a new user with a first and last name
-            val user = hashMapOf(
-                "Nome: " to txtNome,
-                "Telefone: " to txtTelefone,
-                "Sexo: " to txtSexo
-            )
-
             // Add a new document with a generated ID
             if (txtNome.isEmpty() || txtTelefone.isEmpty() || txtSexo.isEmpty()) {
-
+                Toast.makeText(baseContext, "Preencha os campos corretamente!", Toast.LENGTH_SHORT).show()
+                tobaoCadastro.isEnabled = true
+                tobaoLista.isEnabled = true
             }
             else {
+
+                // Create a new user with a first and last name
+                val user = hashMapOf(
+                    "Nome" to txtNome,
+                    "Telefone" to txtTelefone,
+                    "Sexo" to txtSexo
+                )
+
                 db.collection("users")
                     .add(user)
                     .addOnSuccessListener { documentReference ->
