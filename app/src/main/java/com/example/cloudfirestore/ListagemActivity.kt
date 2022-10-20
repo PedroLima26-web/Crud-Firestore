@@ -25,7 +25,11 @@ class ListagemActivity : AppCompatActivity() {
             for (document in documents) {
                 val data = document.data
                 Log.d(TAG, "${document.id} => ${document.data}")
-                display.append("Nome: ${data["Nome: "]}\n")
+                display.append("Nome: ${data["Nome"]}\n")
+                display.append("Telefone: ${data["Telefone"]}\n")
+                display.append("Sexo: ${data["Sexo"]}\n\n")
+
+
             }
 
 

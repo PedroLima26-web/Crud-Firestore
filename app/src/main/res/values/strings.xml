@@ -5,5 +5,7 @@
     <string name="sex">Informe seu xo</string>
     <string name="btnCadastra">Cadastrar</string>
     <string name="btnLista">Listar</string>
+    <string name="btnEditar">Editar</string>
+    <string name="btnExcluir">Excluir</string>
     <string name="lista">Insira um nome para buscar usuário</string>
 </resources>
