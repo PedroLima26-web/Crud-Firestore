@@ -53,16 +53,6 @@
         android:layout_marginBottom="16dp"
         android:text="@string/btnCadastra" />
 
-    <!--EditText
-        android:id="@+id/buscaNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginHorizontal="36dp"
-        android:layout_marginBottom="8dp"
-        android:hint="@string/lista"
-        android:minHeight="48dp" /-->
-
     <Button
         android:id="@+id/lista"
         style="@style/Widget.Material3.Button.TextButton"
