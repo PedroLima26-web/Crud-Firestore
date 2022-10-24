@@ -9,7 +9,8 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Crud-Firestore/app/src/main/res/layout/activity_excluir.xml" value="0.14722222222222223" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Crud-Firestore/app/src/main/res/layout/activity_listagem.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Crud-Firestore/app/src/main/res/layout/activity_main.xml" value="0.24954710144927536" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/Crud-Firestore/app/src/main/res/layout/dialog_excluir.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Crud-Firestore/app/src/main/res/layout/dialog_editar.xml" value="0.27049180327868855" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Crud-Firestore/app/src/main/res/layout/dialog_excluir.xml" value="0.25" />
       </map>
     </option>
   </component>

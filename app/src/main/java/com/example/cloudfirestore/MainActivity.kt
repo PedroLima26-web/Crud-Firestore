@@ -36,11 +36,11 @@ class MainActivity : AppCompatActivity() {
 
             // Add a new document with a generated ID
             if (txtNome.isEmpty() || txtTelefone.isEmpty() || txtSexo.isEmpty()) {
-                Toast.makeText(baseContext, "Preencha os campos corretamente!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(baseContext, "Preencha os campos corretamente!", Toast.LENGTH_SHORT)
+                    .show()
                 tobaoCadastro.isEnabled = true
                 tobaoLista.isEnabled = true
-            }
-            else {
+            } else {
 
                 // Create a new user with a first and last name
                 val user = hashMapOf(
